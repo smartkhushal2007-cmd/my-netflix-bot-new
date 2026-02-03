@@ -1,5 +1,3 @@
-aiogram>=3.0.0
-aiohttp
-aiosqlite
-# Vercel needs this
-pydantic
+aiogram>=3.10.0
+aiohttp>=3.9.0
+pydantic>=2.0.0
