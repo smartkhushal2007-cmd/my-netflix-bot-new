@@ -11,7 +11,7 @@ from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # --- CONFIGURATION (FILL AS NEEDED) ---
-TOKEN = "8207872443:AAHxbq29c3zt58N5Rqu_9KgHQyrEyV1l-3o"
+TOKEN = "8469807556:AAGjQKCn6FVPGJH5e6U5k5hGEXlEh0c2pZQ"
 OWNER_USERNAME = "@DAS_LOVER"  # Admin Username
 OWNER_ID = None                # Integer ID (Optional, better for reliable DMs)
 CHANNEL_USERNAME = "@doraemonandshinchanmoviess"
@@ -63,8 +63,8 @@ async def show_dashboard(message: Message, user):
     
     welcome_text = (
         f"Namaste {html.bold(user.full_name)}! 👋\n\n"
-        f"🎉 <b>Netflix Giveaway Bot</b>\n"
-        f"Free Netflix account jeetne ke liye step complete karein.\n\n"
+        f"🎉 <b>Share & Win Rewards Bot</b>\n"
+        f"Free Premium Rewards jeetne ke liye step complete karein.\n\n"
         f"👇 <b>TASK: Invite 5 Friends</b>\n"
         f"Link share karein aur points jeetein.\n\n"
         f"🔗 <b>Your Link:</b>\n<code>{invite_link}</code>\n\n"
@@ -72,7 +72,7 @@ async def show_dashboard(message: Message, user):
         f"(Jaise hi 5 points honge, 'Redeem' button kaam karega!)"
     )
     
-    btn_text = "🔒 Redeem (Need 5 Points)" if points < 5 else "🎁 REDEEM NETFLIX NOW"
+    btn_text = "🔒 Redeem (Need 5 Points)" if points < 5 else "🎁 REDEEM REWARD NOW"
     cbd = "redeem_locked" if points < 5 else "redeem_now"
         
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
